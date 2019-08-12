@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Checkbox from './uikit/checkboxWithImage/index'
+import Checkbox from './uikit/checkbox/index'
 
 function App() {
   return (
     <>
-      <Checkbox label="First" />
-      <Checkbox label="Second" checked />
-      <Checkbox label="Third" disabled />
+    <Checkbox label="First" /><br />
+      <Checkbox label="Second" checked /><br />
+      <Checkbox label="Third" disabled /><br />
       <Checkbox label="Forth" checked disabled />
     </>
   );

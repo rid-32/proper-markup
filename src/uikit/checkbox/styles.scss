@@ -1,0 +1,42 @@
+@import '../../stylesheets/settings.scss';
+
+.checkbox {
+  position: relative;
+  padding-left: 1.2em;
+
+  &__control {
+    @include visually-hidden;
+  }
+
+  &__view {
+    position: absolute;
+    top: 50%;
+    left: 0.1em;
+    width: 0.6em;
+    height: 0.6em;
+    background-color: var(--checkbox-bg-color);
+    box-shadow: 0 0 0 0.1em var(--checkbox-color);
+    border-radius: 0.05em;
+    transform: translate(0, -50%);
+  }
+
+  &__control:focus + &__view {
+    box-shadow:
+      0 0 0 0.1em var(--checkbox-color),
+      0 0 0 0.2em var(--checkbox-focused-color);
+  }
+
+  &__control:checked + &__view {
+    background-color: var(--checkbox-color);
+    background-image: var(--checkbox-mark);
+  }
+
+  &__control:disabled + &__view {
+    box-shadow: 0 0 0 0.1em var(--checkbox-disabled-color);
+  }
+
+  &__control:checked:disabled + &__view {
+    background-color: var(--checkbox-disabled-color);
+    background-image: var(--checkbox-mark);
+  }
+}

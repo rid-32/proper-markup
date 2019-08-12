@@ -5,9 +5,9 @@ import './styles.scss'
 
 const Checkbox = ({ className, label, onChange, labelProps, viewProps, ...props }) => {
   return (
-    <label className={cn("checkboxWithImage", className)} {...labelProps}>
-      <input type="checkbox" className="checkboxWithImage__control" onChange={onChange} {...props} />
-      <span className="checkboxWithImage__view" {...viewProps} />
+    <label className={cn("checkbox", className)} {...labelProps}>
+      <input type="checkbox" className="checkbox__control" onChange={onChange} {...props} />
+      <span className="checkbox__view" {...viewProps} />
 
       { label }
     </label>

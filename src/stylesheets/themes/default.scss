@@ -1,0 +1,15 @@
+html {
+  /* Colors */
+  --white: #fff;
+  --blue: #4A90E2;
+  --green: #7ED321;
+  --grey: #9B9B9B;
+
+  /* Checkbox */
+  --checkbox-color: var(--blue);
+  --checkbox-focused-color: var(--green);
+  --checkbox-disabled-color: var(--grey);
+  --checkbox-bg-color: var(--white);
+  --checkbox-mark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpolyline fill='none' stroke='%23fff' stroke-width='3' points='1.079 4.999 5 9 10.837 2'/%3E%3C/svg%3E%0A");
+
+}
