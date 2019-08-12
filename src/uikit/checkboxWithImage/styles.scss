@@ -1,0 +1,46 @@
+.option {
+  display: block;
+  margin-bottom: 0.25em;
+}
+
+.checkbox {
+  position: relative;
+  padding-left: 1.2em;
+
+  &__control {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  &__view {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    transform: translate(0, -50%);
+    background-image: url('../../assets/img/svg/unchecked.svg');
+  }
+
+  &__control:focus + &__view {
+    background-image: url('../../assets/img/svg/unchecked-focus.svg');
+  }
+
+  &__control:checked + &__view {
+    background-image: url('../../assets/img/svg/checked.svg');
+  }
+
+  &__control:checked:focus + &__view {
+    background-image: url('../../assets/img/svg/checked-focus.svg');
+  }
+
+  &__control:disabled + &__view {
+    background-image: url('../../assets/img/svg/unchecked-disable.svg');
+  }
+
+  &__control:checked:disabled + &__view {
+    background-image: url('../../assets/img/svg/checked-disable.svg');
+  }
+}
