@@ -8,3 +8,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@mixin checkbox-radio {
+  position: absolute;
+  top: 50%;
+  left: 0.1em;
+  width: 0.6em;
+  height: 0.6em;
+  transform: translate(0, -50%);
+}

@@ -9,15 +9,11 @@
   }
 
   &__view {
-    position: absolute;
-    top: 50%;
-    left: 0.1em;
-    width: 0.6em;
-    height: 0.6em;
+    @include checkbox-radio;
+
     background-color: var(--checkbox-bg-color);
     box-shadow: 0 0 0 0.1em var(--checkbox-color);
     border-radius: 0.05em;
-    transform: translate(0, -50%);
   }
 
   &__control:focus + &__view {
